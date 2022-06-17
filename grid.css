@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #0B0B45;
+    /* background-color: #0B0B45; */
     display: flex;
     height: 100vh;
     margin-left: auto;
@@ -16,11 +16,16 @@ body {
 main {
     display: grid;
     text-align: center;
-    grid-template-areas: 'a a b c''d e e c';
+    grid-template-areas: 'a a b c'
+    'd e e c'
+    'd f f c';
     gap: 10px;
     width: 60%;
     margin: auto;
-   
+    background-color: #0B0B45;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 20px;
 }
 
 main div {
@@ -28,28 +33,33 @@ main div {
 }
 
 .item-a {
-    background-color: rgb(150, 137, 161);
+    background-color:orangered;
     grid-area: a;
 }
 
 .item-b {
-    background-color: rgb(136, 127, 127);
+    background-color: darkorange;
     grid-area: b;
 }
 
 .item-c {
-    background-color: rgb(53, 50, 50);
+    /* background-color: rgb(53, 50, 50); */
     grid-area: c;
 }
 
 .item-d {
-    background-color: rgb(122, 27, 27);
+    background-color: limegreen;
     grid-area: d;
 }
 
 .item-e {
-    background-color: rgb(131, 93, 93);
+    background-color: hsl(184, 93%, 43%);
     grid-area: e;
+}
+
+.item-f {
+    background-color: hsl(184,93%,43%);
+    grid-area: f;
 }
 
 a {
