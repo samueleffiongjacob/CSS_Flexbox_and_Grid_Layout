@@ -8,7 +8,7 @@ body {
     /* background-color: #0B0B45; */
     display: flex;
     height: 100vh;
-    margin-left: auto;
+    margin: auto;
     place-items: center;
     width: 80%;
 }
@@ -20,11 +20,11 @@ main {
     'd e e c'
     'd f f c';
     gap: 10px;
-    width: 60%;
+    width: 40%;
     margin: auto;
     background-color: #0B0B45;
     padding-left: 20px;
-    padding-top: 5px;
+    padding-top: 8px;
     padding-bottom: 20px;
 }
 
@@ -62,48 +62,51 @@ main div {
     grid-area: f;
 }
 
-/* a {
-    text-align: center;
-    margin-left: 10px;
-    align-items: left;
-} */
+
 /* navbar */
-#ww {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    border-right: 1px solid #bbb;
+.sidenav {
+    height: 100%;
+    /* Full-height: remove this if you want "auto" height */
+    width: 160px;
+    /* Set the width of the sidebar */
     position: fixed;
+    /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1;
+    /* Stay on top */
     top: 0;
-    z-index: 1000%;
-    font-size: 28px;
-    width: 30%;
+    /* Stay at the top */
+    left: 0;
+    /* Black */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 20px;
+    margin-top: 20%;
+    margin-left: 5px;
 }
 
-#nav {
-    float: left;
-}
-
-#nav a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+/* The navigation menu links */
+.sidenav a {
+    padding: 6px 8px 6px 16px;
     text-decoration: none;
+    font-size: 25px;
+    color: #f1f1f1;
+    display: block;
 }
 
-/* not active nav */
-#nav a:hover:not(.active) {
-    background-color: blue;
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
 }
-
-/* active nav */
 .active {
-    background-color: #04AA6D;
+    background-color: #0B0B45;
+}
+.not_active{
+    background-color: orangered;
 }
 
+.not_active:hover {
+    background-color: hsl(184, 93%, 43%);
+}
 .active:hover {
-    background-color: blue;
+    background-color: hsl(184, 93%, 43%);
 }
